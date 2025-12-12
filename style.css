@@ -30,6 +30,9 @@
     --gradient-primary: linear-gradient(135deg, #fc2651 0%, #e91e47 100%);
     --gradient-accent: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
     --gradient-surface: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+
+    /* NEW HEADER COLOR */
+    --header-green: linear-gradient(135deg, #b9ffb9 0%, #8ef28e 100%);
 }
 
 .dark-mode {
@@ -79,8 +82,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* UPDATED HEADER COLOR (LIGHT GREEN) */
 header {
-    background: var(--gradient-primary);
+    background: var(--header-green);
     color: white;
     position: sticky;
     top: 0;
@@ -577,8 +581,8 @@ footer {
     .zone-item:hover {
         transform: translateY(-10px) scale(1.01);
     }
-
 }
+
 .control-button img {
     transition: transform 0.4s ease;
     width: 24px;
@@ -595,6 +599,7 @@ footer {
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
+
 .control-button:active {
     transform: translateY(0);
 }
@@ -613,9 +618,11 @@ footer {
     justify-content: center;
     backdrop-filter: blur(20px);
 }
+
 .control-buttons button:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+
 .settings-button {
     background: var(--gradient-primary);
     color: white;
